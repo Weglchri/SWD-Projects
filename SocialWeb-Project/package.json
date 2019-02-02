@@ -1,0 +1,18 @@
+{
+  "name": "twitter-miner-social-web",
+  "version": "1.0.0",
+  "description": "early-build",
+  "main": "main.js",
+  "dependencies": {
+    "anychart": "^8.0.1",
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11",
+    "package.json": "^2.0.1",
+    "twitter-stream-api": "^0.5.2"
+  },
+  "scripts": {
+    "test": "idk"
+  },
+  "author": "Wegl Christopher",
+  "license": "ISC"
+}
