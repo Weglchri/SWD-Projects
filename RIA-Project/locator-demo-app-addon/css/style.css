@@ -1,0 +1,19 @@
+
+
+#map {
+  width: 50%;
+  height: 100%;
+  position:absolute;
+  float: left;
+}
+
+#panel {
+  width: 47%;
+  float: right;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

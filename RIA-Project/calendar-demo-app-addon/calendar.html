@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calender</title>
+    <meta charset='utf-8' />
+
+    <!-- jquery files -->
+    <script src='js/jquerylib/jquery/jquery.min.js'></script>
+    <script src='js/jquerylib/jqueryui/jquery-ui.min.js'></script>
+
+    <!-- calendar related files -->
+    <link href='js/calenderlib/fullcalendar.min.css' rel='stylesheet' />
+    <link href='js/calenderlib/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='js/calenderlib/moment.min.js'></script>
+    <script src='js/calenderlib/fullcalendar.min.js'></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/jquerylib/jqueryui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- javascript -->
+    <script src="js/services/moment.js" defer></script>
+    <script src="js/services/notify.min.js" defer></script>
+    <script src="js/model/user.js" defer></script>
+    <script src="js/model/calendar.js" defer></script>
+    <script src="js/data/calendardao.js" defer></script>
+    <script src="js/services/xmltojson.js" defer></script>
+    <script src="js/services/restcalls.js" defer></script>
+    <script src="js/services/calenderservice.js" defer></script>
+    <script src="js/services/userservice.js" defer></script>
+    <script src="js/services/dateparser.js" defer></script>
+    <script src="js/controller/login.js" defer></script>
+    
+    
+</head>
+
+<body onload="(new Calendar());">
+    <header>
+        <form id="login">
+            <label>Username:</label>
+            <input name="username" size="14"/>
+            <label>Password:</label>
+            <input name="password" type="password" size="20"/>
+            <label>Group:</label>
+            <input name="group" size="5" Placeholder="G2" />
+            <input type="submit" id="loginsub" value="submit" />
+
+        </form>
+    </header>
+
+    <section>
+        <div id='calendar'></div>
+    </section>
+    
+    <section hidden>
+        <div id="event_window" class="dialog_window" title="Event" window>
+            <table class="dialog_form">
+                <tr><th>Event:</th></tr>
+                <tr><td><input type="text" id="event_title" placeholder="Golfing" /></td></tr>
+                <tr><th>Description:</th></tr>
+                <tr><td><input type="text" id="event_description" placeholder="Something" /></td></tr>
+                <tr><th>Start day:</th></tr>
+                <tr><td><input type="text" id="event_startday" /></td></tr>
+                <tr><th>Start time:</th></tr>
+                <tr><td><input type="text" id="event_starttime" /></td></tr>
+                <tr><th>End day:</th></tr>
+                <tr><td><input type="text" id="event_enddate" placeholder="25.06.2017" /></td></tr>
+                <tr><th>End time:</th></tr>
+                <tr><td><input type="text" id="event_endtime" placeholder="14:30"/></td></tr>
+            </table>
+            
+        </div>
+    </section>
+</body>
+
+</html>

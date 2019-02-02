@@ -1,0 +1,109 @@
+/*h2 {*/
+/*width:100%;*/
+/*<!--background-image:url("/Server/img/logo.jpg");-->*/
+/*}*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 20%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #999;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header {
+    background: #999;
+    border-radius: 5px;
+
+}
+
+#linkClickedHeader {
+    display: none;
+}
+
+/*
+ * Responsive Entries
+ */
+
+/*
+Smartphone Size
+ */
+@media screen and (min-width: 320px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 10%;
+        background-color: #fff;
+        color: #444;
+    }
+
+    .box {
+        background-color: lightcoral;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 70%;
+        text-align: center;
+        margin: 5px;
+    }
+
+}
+
+/*
+Tablet Size
+ */
+
+@media screen and (min-width: 480px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 4.5%;
+        background-color: #fff;
+        color: #444;
+
+    }
+
+    .box {
+        background-color: lightblue;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 70%;
+        text-align: center;
+    }
+}
+
+/*
+Desktop Size
+ */
+@media screen and (min-width: 720px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 4.5%;
+        background-color: #fff;
+        color: #444;
+    }
+
+    .box {
+        background-color: lightgreen;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 70%;
+        text-align: center;
+    }
+
+}
+
+

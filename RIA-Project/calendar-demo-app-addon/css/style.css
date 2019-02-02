@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;
+    margin: 5%;
+}
+
+#calendar {
+    max-width: auto;
+    margin: auto;
+}
+
+#login {
+    margin-bottom: 2%;
+}
+
+.fc-event {
+    font-size: 0.8em;
+}
+
+
