@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset='UTF-8'>
+	<meta name='author' content='Wegl Christopher'>
+	<script type='text/javascript' src='JS/scripts.js'>
+	</script>
+	</head>
+<body>
+ 	<header>
+		<h2>Country-Selection</h2>
+	</header>
+	<section id='CountryStateCity'> 
+		<form>
+			<select name='country' id='countries' onchange="selectState(this.value); showSelect(this.value)"></select>
+			<select name='state' id='states' onchange='selectCity(this.value); showSelect(this.value)'></select>
+			<select name='city' id='cities' onchange='showSelect(this.value)'> </select><br>
+			<input style='margin-top: 10px; width: 190px;'  type='text' id='showSelection' readonly='readonly'/>
+			<input name='reset' type='button' value='Reset' onclick='resetButton()'>  
+		</form>
+	</section>
+</body>
+</html>
